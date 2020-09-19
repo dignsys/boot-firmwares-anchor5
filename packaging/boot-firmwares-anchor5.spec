@@ -23,8 +23,8 @@ mkdir -p %{buildroot}/boot/
 mkdir -p %{buildroot}/u-boot/
 
 # 2. Install Images
-install -m 755 files/uInitrd %{buildroot}/boot/
-install -m 755 files/logo.bmp %{buildroot}/boot/
+#install -m 755 files/uInitrd %{buildroot}/boot/
+#install -m 755 files/logo.bmp %{buildroot}/boot/
 install -m 644 files/bl1-emmcboot.bin %{buildroot}/u-boot/
 install -m 644 files/loader-emmc.img %{buildroot}/u-boot/
 install -m 644 files/bl_mon.img %{buildroot}/u-boot/
@@ -32,5 +32,5 @@ install -m 644 files/bootloader.img %{buildroot}/u-boot/
 install -m 644 files/params.bin %{buildroot}/u-boot/
 
 %files
-%attr(0644, root, root) /boot/*
+#%attr(0644, root, root) /boot/*
 %attr(0644, root, root) /u-boot/*
